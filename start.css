@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --orange: #F2C14E;
+    --winning-blocks: #2d414b;
+}
+
+body{
+    color: var(--orange);
+    background-color: #37505C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    font-size: 40px;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tileWrapper,
+.againstWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#start{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 15px 40px;
+    background-color: var(--orange);
+    border-radius: 10px;
+    border-color: var(--orange);
+    font-size: 38px;
+    font-weight: 600;
+    color: #2d414b;
+    transition: 300ms transform ease-in-out;
+}
+
+#start:hover{
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+
+h1{
+    font-size: 100px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.chooseType,
+.choosePlayer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chooseType button,
+.choosePlayer button{
+    margin: 20px 30px;
+    padding: 10px 20px;
+    /* background-color: var(--orange); */
+    border-radius: 10px;
+    /* border-color: var(--orange); */
+    font-size: 38px;
+    font-weight: 600;
+    color: #2d414b;
+    /* transition: 300ms transform ease-in-out; */
+}
+
+.choosePlayer button:hover{
+    background-color: #f0d69c; 
+    border-color: #f0d69c;
+}
+
+.choosePlayer button.selected {
+    background-color: var(--orange);
+    border-color: var(--orange);
+}
+
+.chooseType button:hover{
+    background-color: #f0d69c; 
+    border-color: #f0d69c;
+}
+
+.chooseType button.selected,
+.choosePlayer button.selected {
+    background-color: var(--orange);
+    border-color: var(--orange);
+    color: #2d414b;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="computer.css">
+    </head>
+<body>
+    <div class="container">
+        <h1 id="playerText">Tic Tac Toe</h1>
+        
+        <div class="wrapper">
+            <div class="xscore">
+                <h3 class="text">X's score</h3>
+                <p class="value">0</p>
+            </div>
+
+            <div class="buttons">
+                <button id="restart">Restart</button>
+                <button id="newgame">New Game</button>
+            </div>
+            
+            <div class="yscore">
+                <h3 class="text">Y's score</h3>
+                <p class="value">0</p>
+            </div>
+        </div>
+
+        <p id="turn"></p>
+
+        <div class="gameboard">
+            <div class="box" id="0"></div>
+            <div class="box" id="1"></div>
+            <div class="box" id="2"></div>
+            <div class="box" id="3"></div>
+            <div class="box" id="4"></div>
+            <div class="box" id="5"></div>
+            <div class="box" id="6"></div>
+            <div class="box" id="7"></div>
+            <div class="box" id="8"></div>
+        </div>
+
+        <div class="winner">
+            <p class="win">X player has won!</p>
+        </div>
+    </div>
+    
+    <script src="computer.js"></script>
+</body>
+</html>

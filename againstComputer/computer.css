@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Slackside+One&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --orange: #F2C14E;
+    --winning-blocks: #2d414b;
+}
+
+body {
+    color: var(--orange);
+    background-color: #37505C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Slackside One', cursive;
+    font-size: 100px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.xscore,
+.yscore {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.xscore h3,
+.yscore h3 {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.xscore p,
+.yscore p {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.buttons {
+    margin: auto 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons button {
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: var(--orange);
+    border-radius: 10px;
+    border-color: var(--orange);
+    font-size: 18px;
+    font-weight: 600;
+    color: #2d414b;
+    transition: 300ms transform ease-in-out;
+}
+
+.buttons button:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+
+#turn {
+    margin-top: 40px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.winner {
+    height: 100%;
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.winner p.win {
+    font-size: 70px;
+    color: var(--orange);
+    font-weight: bold;
+    display: none;
+}
+
+
+.gameboard {
+    height: 100%;
+    width: 450px;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    font-size: 150px;
+    border-right: 4px solid;
+    border-bottom: 4px solid;
+    display: flex;
+    justify-content: center;
+}
+
+.box:nth-child(3n) {
+    border-right: none;
+}
+
+.box:nth-child(6) ~ .box {
+    border-bottom: none;
+}
+
+#newgame {
+    display: none;
+}

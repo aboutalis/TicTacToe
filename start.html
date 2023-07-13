@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="start.css">
+</head>
+<body>
+    <div class="container">
+        <div class="tileWrapper">
+            <h3>Welcome</h3>
+            <h3>to</h3>
+            <h1>Tic Tac Toe</h1>
+        </div>
+        
+        <div class="againstWrapper">
+            <h4>Choose game type:</h4>
+            
+            <div class="chooseType">
+                <button id="multiplayerButton" onclick="selectGameType('multiplayer')">Multiplayer</button>
+                <p>or</p>
+                <button id="computerButton" onclick="selectGameType('computer')">Computer</button>
+                
+            </div>
+        </div>
+
+        <div class="tileWrapper">
+            <h4>Choose who will start:</h4>
+            
+            <div class="choosePlayer">
+                <button id="xButton" onclick="selectPlayer('X')">X</button>
+                <p>or</p>
+                <button id="yButton" onclick="selectPlayer('O')">O</button>
+            </div>
+        </div>
+
+        <button id="start" onclick="startGame()">Start</button>
+
+    </div>
+    
+    <script src="start.js"></script>
+</body>
+</html>
