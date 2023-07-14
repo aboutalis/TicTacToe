@@ -68,3 +68,15 @@ The game logic is implemented in the respective JavaScript files (`computer.js` 
 7. Click the "Restart" button to play again with the same players and scores, or click "New Game" to start a new game with fresh scores.
 
 Enjoy playing Tic Tac Toe!
+
+### Start Scene
+<p align="center">
+  <img src="https://github.com/aboutalis/TicTacToe/assets/132292767/999c21c2-d3eb-4886-abc0-1d91838c81dd" alt="startScene">
+</p>
+
+### Game Scene
+<p align="center">
+  <img src="https://github.com/aboutalis/TicTacToe/assets/132292767/81b9e261-60eb-4051-8105-99330d0da0a5" alt="gameScene">
+</p>
+
+
